@@ -5,7 +5,7 @@ import 'leaflet/dist/leaflet.css';
 import AutocompleteInput from './AutocompleteInput';
 import Navbar from './navBar';
 
-const API_URL = 'http://localhost:8000/api/optimize-route/';
+const API_URL = 'http://localhost:8000/api/optimize-route/'; //backend url
 
 export default function RouteOptimizer() {
   const [startLocation, setStartLocation] = useState(null);
