@@ -49,7 +49,7 @@ def optimize_route(request):
     transit_callback_index = routing.RegisterTransitCallback(distance_callback)
     routing.SetArcCostEvaluatorOfAllVehicles(transit_callback_index)
 
-    max_distance = 200000
+    max_distance = 200000 # 200 km splits between all drivers
     routing.AddDimension(
         transit_callback_index,
         0,  
