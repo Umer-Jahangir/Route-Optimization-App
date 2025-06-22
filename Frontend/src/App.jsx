@@ -1,11 +1,15 @@
 import React from 'react';
-import RouteOptimizer from './route';
-
+import RouteOptimizer from './pages/route';
+import Home from './pages/home.jsx';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
-    <div>
-      <RouteOptimizer />
-    </div>
+      <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/router" element={<RouteOptimizer />} />
+      </Routes>
+    </Router>
   );
 }
 
